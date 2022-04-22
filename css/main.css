@@ -1,0 +1,100 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */ 
+header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;/*나중에 보이도록 처리*/
+}
+header .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10;
+  right: 0;
+}
+header .sub-menu ul.menu {
+  display: flex;
+}
+header .sub-menu .menu li {
+  position: relative;
+}
+header .sub-menu .menu li a {
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+header .sub-menu .menu li a:hover {
+  color: #000;
+}
+header .sub-menu .menu li::before {
+ content: '';
+ width: 1px;
+ height: 12px;
+ background-color: #e5e5e5;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto 0;
+}
+header .sub-menu .menu li:first-child:before {
+  display: none;
+}
+header .sub-menu .search {
+  height: 34px;
+  position: relative;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #690;
+}
+header .sub-menu .search .material-icons {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+header .sub-menu .search.focused .material-icons {
+opacity: 0;
+}
